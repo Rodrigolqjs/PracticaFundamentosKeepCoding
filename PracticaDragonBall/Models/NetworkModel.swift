@@ -12,7 +12,7 @@ enum NetworkError: Error, Equatable {
 
 class NetworkModel {
     
-    var session: URLSession
+    let session: URLSession
     
     var token: String?
     
@@ -39,7 +39,7 @@ class NetworkModel {
         urlRequest.httpMethod = "POST"
         urlRequest.setValue("Basic \(base64LoginData)", forHTTPHeaderField: "Authorization")
         
-        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+        let task = session.dataTask(with: urlRequest) { data, response, error in
             guard error == nil else {
                 completion(nil, .other)
                 return
@@ -95,7 +95,7 @@ class NetworkModel {
         
         urlRequest.httpBody = try? JSONEncoder().encode(body)
         
-        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+        let task = session.dataTask(with: urlRequest) { data, response, error in
             guard error == nil else {
                 completion([], .other)
                 return
@@ -148,7 +148,7 @@ class NetworkModel {
         
         urlRequest.httpBody = try? JSONEncoder().encode(body)
         
-        let task = URLSession.shared.dataTask(with: urlRequest) { data, response, error in
+        let task = session.dataTask(with: urlRequest) { data, response, error in
             guard error == nil else {
                 completion([], .other)
                 return

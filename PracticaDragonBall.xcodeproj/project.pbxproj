@@ -7,10 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5B344AA628B6A08800B35537 /* heroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B344AA528B6A08800B35537 /* heroes.json */; };
+		5B344AAA28B6A3CA00B35537 /* noHeroes.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B344AA928B6A3CA00B35537 /* noHeroes.json */; };
+		5B344AAC28B6A80900B35537 /* transformations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B344AAB28B6A80900B35537 /* transformations.json */; };
+		5B344AAE28B6ACC200B35537 /* noTransformations.json in Resources */ = {isa = PBXBuildFile; fileRef = 5B344AAD28B6ACC200B35537 /* noTransformations.json */; };
 		5B7456F3289C744600B06F9F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7456F2289C744600B06F9F /* AppDelegate.swift */; };
 		5B7456F5289C744600B06F9F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B7456F4289C744600B06F9F /* SceneDelegate.swift */; };
 		5B7456FC289C744700B06F9F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5B7456FB289C744700B06F9F /* Assets.xcassets */; };
-		5B74570A289C744700B06F9F /* PracticaDragonBallTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B745709289C744700B06F9F /* PracticaDragonBallTests.swift */; };
 		5B84F46D289DDFDD005B8BF8 /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B84F45A289DDFDD005B8BF8 /* ViewController.xib */; };
 		5B84F46E289DDFDD005B8BF8 /* TableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B84F45B289DDFDD005B8BF8 /* TableViewCell.xib */; };
 		5B84F46F289DDFDD005B8BF8 /* TableViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5B84F45C289DDFDD005B8BF8 /* TableViewController.xib */; };
@@ -26,6 +29,9 @@
 		5B84F47B289DDFDD005B8BF8 /* NetworkModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84F46C289DDFDD005B8BF8 /* NetworkModel.swift */; };
 		5B84F47D289DE17A005B8BF8 /* LocalDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84F47C289DE17A005B8BF8 /* LocalDataModel.swift */; };
 		5B84F480289DE287005B8BF8 /* UIImageViewExtension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B84F47F289DE287005B8BF8 /* UIImageViewExtension.swift */; };
+		5BDF870728A575C2008EE1AD /* LocalDataModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF870628A575C0008EE1AD /* LocalDataModelTests.swift */; };
+		5BDF872928A5AE71008EE1AD /* NetworkModelTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF872828A5AE71008EE1AD /* NetworkModelTests.swift */; };
+		5BDF872B28A5B221008EE1AD /* URLSessionMock.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5BDF872A28A5B221008EE1AD /* URLSessionMock.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,24 +42,19 @@
 			remoteGlobalIDString = 5B7456EE289C744600B06F9F;
 			remoteInfo = PracticaDragonBall;
 		};
-		5B745710289C744700B06F9F /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 5B7456E7289C744600B06F9F /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 5B7456EE289C744600B06F9F;
-			remoteInfo = PracticaDragonBall;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		5B344AA528B6A08800B35537 /* heroes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = heroes.json; sourceTree = "<group>"; };
+		5B344AA928B6A3CA00B35537 /* noHeroes.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = noHeroes.json; sourceTree = "<group>"; };
+		5B344AAB28B6A80900B35537 /* transformations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = transformations.json; sourceTree = "<group>"; };
+		5B344AAD28B6ACC200B35537 /* noTransformations.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = noTransformations.json; sourceTree = "<group>"; };
 		5B7456EF289C744600B06F9F /* PracticaDragonBall.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PracticaDragonBall.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B7456F2289C744600B06F9F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		5B7456F4289C744600B06F9F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		5B7456FB289C744700B06F9F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5B745700289C744700B06F9F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5B745705289C744700B06F9F /* PracticaDragonBallTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticaDragonBallTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B745709289C744700B06F9F /* PracticaDragonBallTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticaDragonBallTests.swift; sourceTree = "<group>"; };
-		5B74570F289C744700B06F9F /* PracticaDragonBallUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = PracticaDragonBallUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5B84F45A289DDFDD005B8BF8 /* ViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ViewController.xib; sourceTree = "<group>"; };
 		5B84F45B289DDFDD005B8BF8 /* TableViewCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewCell.xib; sourceTree = "<group>"; };
 		5B84F45C289DDFDD005B8BF8 /* TableViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TableViewController.xib; sourceTree = "<group>"; };
@@ -69,6 +70,9 @@
 		5B84F46C289DDFDD005B8BF8 /* NetworkModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkModel.swift; sourceTree = "<group>"; };
 		5B84F47C289DE17A005B8BF8 /* LocalDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModel.swift; sourceTree = "<group>"; };
 		5B84F47F289DE287005B8BF8 /* UIImageViewExtension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageViewExtension.swift; sourceTree = "<group>"; };
+		5BDF870628A575C0008EE1AD /* LocalDataModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocalDataModelTests.swift; sourceTree = "<group>"; };
+		5BDF872828A5AE71008EE1AD /* NetworkModelTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkModelTests.swift; sourceTree = "<group>"; };
+		5BDF872A28A5B221008EE1AD /* URLSessionMock.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLSessionMock.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,13 +84,6 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 		5B745702289C744700B06F9F /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B74570C289C744700B06F9F /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -110,7 +107,6 @@
 			children = (
 				5B7456EF289C744600B06F9F /* PracticaDragonBall.app */,
 				5B745705289C744700B06F9F /* PracticaDragonBallTests.xctest */,
-				5B74570F289C744700B06F9F /* PracticaDragonBallUITests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -133,7 +129,13 @@
 		5B745708289C744700B06F9F /* PracticaDragonBallTests */ = {
 			isa = PBXGroup;
 			children = (
-				5B745709289C744700B06F9F /* PracticaDragonBallTests.swift */,
+				5BDF870628A575C0008EE1AD /* LocalDataModelTests.swift */,
+				5BDF872828A5AE71008EE1AD /* NetworkModelTests.swift */,
+				5BDF872A28A5B221008EE1AD /* URLSessionMock.swift */,
+				5B344AA928B6A3CA00B35537 /* noHeroes.json */,
+				5B344AA528B6A08800B35537 /* heroes.json */,
+				5B344AAB28B6A80900B35537 /* transformations.json */,
+				5B344AAD28B6ACC200B35537 /* noTransformations.json */,
 			);
 			path = PracticaDragonBallTests;
 			sourceTree = "<group>";
@@ -219,24 +221,6 @@
 			productReference = 5B745705289C744700B06F9F /* PracticaDragonBallTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
-		5B74570E289C744700B06F9F /* PracticaDragonBallUITests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 5B74571F289C744700B06F9F /* Build configuration list for PBXNativeTarget "PracticaDragonBallUITests" */;
-			buildPhases = (
-				5B74570B289C744700B06F9F /* Sources */,
-				5B74570C289C744700B06F9F /* Frameworks */,
-				5B74570D289C744700B06F9F /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				5B745711289C744700B06F9F /* PBXTargetDependency */,
-			);
-			name = PracticaDragonBallUITests;
-			productName = PracticaDragonBallUITests;
-			productReference = 5B74570F289C744700B06F9F /* PracticaDragonBallUITests.xctest */;
-			productType = "com.apple.product-type.bundle.ui-testing";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -251,10 +235,6 @@
 						CreatedOnToolsVersion = 13.4.1;
 					};
 					5B745704289C744700B06F9F = {
-						CreatedOnToolsVersion = 13.4.1;
-						TestTargetID = 5B7456EE289C744600B06F9F;
-					};
-					5B74570E289C744700B06F9F = {
 						CreatedOnToolsVersion = 13.4.1;
 						TestTargetID = 5B7456EE289C744600B06F9F;
 					};
@@ -275,7 +255,6 @@
 			targets = (
 				5B7456EE289C744600B06F9F /* PracticaDragonBall */,
 				5B745704289C744700B06F9F /* PracticaDragonBallTests */,
-				5B74570E289C744700B06F9F /* PracticaDragonBallUITests */,
 			);
 		};
 /* End PBXProject section */
@@ -298,13 +277,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B74570D289C744700B06F9F /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5B344AAA28B6A3CA00B35537 /* noHeroes.json in Resources */,
+				5B344AAE28B6ACC200B35537 /* noTransformations.json in Resources */,
+				5B344AA628B6A08800B35537 /* heroes.json in Resources */,
+				5B344AAC28B6A80900B35537 /* transformations.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,14 +310,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5B74570A289C744700B06F9F /* PracticaDragonBallTests.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		5B74570B289C744700B06F9F /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
+				5BDF872B28A5B221008EE1AD /* URLSessionMock.swift in Sources */,
+				5BDF872928A5AE71008EE1AD /* NetworkModelTests.swift in Sources */,
+				5BDF870728A575C2008EE1AD /* LocalDataModelTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -352,11 +323,6 @@
 			isa = PBXTargetDependency;
 			target = 5B7456EE289C744600B06F9F /* PracticaDragonBall */;
 			targetProxy = 5B745706289C744700B06F9F /* PBXContainerItemProxy */;
-		};
-		5B745711289C744700B06F9F /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 5B7456EE289C744600B06F9F /* PracticaDragonBall */;
-			targetProxy = 5B745710289C744700B06F9F /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -569,42 +535,6 @@
 			};
 			name = Release;
 		};
-		5B745720289C744700B06F9F /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5U2MYSX27B;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.RodrigoLatorre.PracticaDragonBallUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PracticaDragonBall;
-			};
-			name = Debug;
-		};
-		5B745721289C744700B06F9F /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 5U2MYSX27B;
-				GENERATE_INFOPLIST_FILE = YES;
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.RodrigoLatorre.PracticaDragonBallUITests;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_EMIT_LOC_STRINGS = NO;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_TARGET_NAME = PracticaDragonBall;
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -631,15 +561,6 @@
 			buildConfigurations = (
 				5B74571D289C744700B06F9F /* Debug */,
 				5B74571E289C744700B06F9F /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		5B74571F289C744700B06F9F /* Build configuration list for PBXNativeTarget "PracticaDragonBallUITests" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				5B745720289C744700B06F9F /* Debug */,
-				5B745721289C744700B06F9F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

@@ -29,14 +29,16 @@ class ViewController: UIViewController, UITextFieldDelegate {
 
     @IBAction func onButtonTap(_ sender: Any) {
         
-//        let user: String = userTextField.text ?? "rodrigo.latorre@outlook.com"
-//        let password: String = passwordTextField.text ?? "rlq12345"
+        let user: String = userTextField.text!
+        let password: String = passwordTextField.text!
         let login = NetworkModel()
-        let user: String = "rodrigo.latorre@outlook.com"
-        let password: String = "rlq12345"
         
         guard !user.isEmpty, !password.isEmpty else {
-            return print("no hay")
+            let alert = UIAlertController(title: "Empty fields", message: "", preferredStyle: .alert)
+            let alertAction = UIAlertAction(title: "Ok", style: .default)
+            alert.addAction(alertAction)
+            present(alert, animated: true)
+            return
         }
         
         loginButton.isEnabled = false
@@ -49,8 +51,13 @@ class ViewController: UIViewController, UITextFieldDelegate {
                 self?.activityIndicator.stopAnimating()
                 
                 guard let token = token, !token.isEmpty else {
+                    let alert = UIAlertController(title: "Usuario o contraseña incorrectos", message: "", preferredStyle: .alert)
+                    let alertAction = UIAlertAction(title: "Ok", style: .default)
+                    alert.addAction(alertAction)
+                    self?.present(alert, animated: true)
                     return print("no hay token")
-                }
+                } 
+                
                 
                 LocalDataModel.save(token: token)
                 

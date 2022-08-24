@@ -49,7 +49,7 @@
                         <constraint firstAttribute="width" constant="100" id="ljf-yg-w5L"/>
                     </constraints>
                     <state key="normal" title="Button"/>
-                    <buttonConfiguration key="configuration" style="filled" title="Button"/>
+                    <buttonConfiguration key="configuration" style="filled" title="Login"/>
                     <connections>
                         <action selector="onButtonTap:" destination="-1" eventType="touchUpInside" id="rta-R1-jgu"/>
                     </connections>
